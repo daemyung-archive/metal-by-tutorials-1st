@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8200EF8920A93DD600235737 /* skeleton.gltf in Resources */ = {isa = PBXBuildFile; fileRef = 8200EF8720A93DD500235737 /* skeleton.gltf */; };
+		8200EF8A20A93DD600235737 /* buffer_skeleton.bin in Resources */ = {isa = PBXBuildFile; fileRef = 8200EF8820A93DD500235737 /* buffer_skeleton.bin */; };
+		8200EF8D20A9503400235737 /* large-plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 8200EF8B20A9503400235737 /* large-plane.mtl */; };
+		8200EF8E20A9503400235737 /* large-plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8200EF8C20A9503400235737 /* large-plane.obj */; };
+		82330E1020AFA5EE001CBFEF /* treefir.obj in Resources */ = {isa = PBXBuildFile; fileRef = 82330E0E20AFA5ED001CBFEF /* treefir.obj */; };
+		82330E1120AFA5EE001CBFEF /* treefir.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 82330E0F20AFA5ED001CBFEF /* treefir.mtl */; };
+		82330E3720B125D1001CBFEF /* PhysicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82330E3620B125D1001CBFEF /* PhysicsController.swift */; };
+		82330E3A20B1263F001CBFEF /* DebugBoundingBox.metal in Sources */ = {isa = PBXBuildFile; fileRef = 82330E3820B1263E001CBFEF /* DebugBoundingBox.metal */; };
+		82330E3B20B1263F001CBFEF /* DebugBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82330E3920B1263E001CBFEF /* DebugBoundingBox.swift */; };
+		82506A1620411D5F00D21A0B /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82506A1520411D5F00D21A0B /* ViewControllerExtension.swift */; };
+		82506A1B20411DB100D21A0B /* RendererExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82506A1920411D9300D21A0B /* RendererExtension.swift */; };
+		826B79CE2046DA3F008B030C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826B79CD2046DA3F008B030C /* Camera.swift */; };
+		826B79D12046DA87008B030C /* Submesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826B79D02046DA87008B030C /* Submesh.swift */; };
+		8278FC5B20651EEA00D81B41 /* Texturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8278FC5A20651EEA00D81B41 /* Texturable.swift */; };
+		8281920B20B2D4A200B74149 /* oilcan.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 828191FF20B2D4A200B74149 /* oilcan.mtl */; };
+		8281920C20B2D4A200B74149 /* oilcan.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8281920020B2D4A200B74149 /* oilcan.obj */; };
+		829618561FB91EF100CBB303 /* LocalClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829618551FB91EF100CBB303 /* LocalClasses.swift */; };
+		829618581FB943BD00CBB303 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829618571FB943BD00CBB303 /* Renderer.swift */; };
+		8296185D1FB94FD400CBB303 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8296185C1FB94FD400CBB303 /* Shaders.metal */; };
+		829705DA20340D4A00AE03CB /* MathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829705D920340D4A00AE03CB /* MathLibrary.swift */; };
+		82A270DD1FB9123C004D47F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A270DC1FB9123C004D47F2 /* ViewController.swift */; };
+		82A270DF1FB9123C004D47F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A270DE1FB9123C004D47F2 /* Assets.xcassets */; };
+		82A270E21FB9123C004D47F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A270E01FB9123C004D47F2 /* Main.storyboard */; };
+		82A7EE50209FD854005CE641 /* Textures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A7EE4F209FD854005CE641 /* Textures.xcassets */; };
+		82B0068220991D8400F58681 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0068120991D8400F58681 /* Animation.swift */; };
+		82B006862099209B00F58681 /* GLTFAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DDA8BE2090458D00EB2A9B /* GLTFAsset.swift */; };
+		82B006872099209B00F58681 /* GLTFTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DDA8C02090458E00EB2A9B /* GLTFTypes.swift */; };
+		82B006892099212F00F58681 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B006882099212F00F58681 /* Renderable.swift */; };
+		82BEB44B209D41D6008C2BDC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEB44A209D41D6008C2BDC /* GameView.swift */; };
+		82BEB44D209D4221008C2BDC /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEB44C209D4221008C2BDC /* InputController.swift */; };
+		82DDA8C9209045E900EB2A9B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DDA8C8209045E900EB2A9B /* Character.swift */; };
+		82DDA8CC2090485B00EB2A9B /* GLTFMathLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DDA8CB2090485B00EB2A9B /* GLTFMathLibrary.swift */; };
+		82DDA8D620904EBF00EB2A9B /* CharacterShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 82DDA8D520904EBF00EB2A9B /* CharacterShaders.metal */; };
+		82F2C22B204518CD0082FDE6 /* Prop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2C22A204518CD0082FDE6 /* Prop.swift */; };
+		82F2C22D204518D40082FDE6 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2C22C204518D40082FDE6 /* Node.swift */; };
+		82F3733320A45F0A00BF065F /* racing-car.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 82F3733120A45F0A00BF065F /* racing-car.mtl */; };
+		82F3734420A4658F00BF065F /* racing-car.obj in Resources */ = {isa = PBXBuildFile; fileRef = 82F3734320A4658F00BF065F /* racing-car.obj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8200EF8720A93DD500235737 /* skeleton.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skeleton.gltf; sourceTree = "<group>"; };
+		8200EF8820A93DD500235737 /* buffer_skeleton.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = buffer_skeleton.bin; sourceTree = "<group>"; };
+		8200EF8B20A9503400235737 /* large-plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "large-plane.mtl"; sourceTree = "<group>"; };
+		8200EF8C20A9503400235737 /* large-plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "large-plane.obj"; sourceTree = "<group>"; };
+		82330E0E20AFA5ED001CBFEF /* treefir.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treefir.obj; sourceTree = "<group>"; };
+		82330E0F20AFA5ED001CBFEF /* treefir.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treefir.mtl; sourceTree = "<group>"; };
+		82330E3620B125D1001CBFEF /* PhysicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsController.swift; sourceTree = "<group>"; };
+		82330E3820B1263E001CBFEF /* DebugBoundingBox.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DebugBoundingBox.metal; sourceTree = "<group>"; };
+		82330E3920B1263E001CBFEF /* DebugBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugBoundingBox.swift; sourceTree = "<group>"; };
+		82506A1520411D5F00D21A0B /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		82506A1920411D9300D21A0B /* RendererExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererExtension.swift; sourceTree = "<group>"; };
+		826B79CD2046DA3F008B030C /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		826B79D02046DA87008B030C /* Submesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Submesh.swift; sourceTree = "<group>"; };
+		82725C4320340E07007BA98D /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		8278FC5A20651EEA00D81B41 /* Texturable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texturable.swift; sourceTree = "<group>"; };
+		828191F520B2D33C00B74149 /* CarScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarScene.swift; sourceTree = "<group>"; };
+		828191F720B2D3A900B74149 /* License.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		828191FF20B2D4A200B74149 /* oilcan.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oilcan.mtl; sourceTree = "<group>"; };
+		8281920020B2D4A200B74149 /* oilcan.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oilcan.obj; sourceTree = "<group>"; };
+		829618551FB91EF100CBB303 /* LocalClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalClasses.swift; sourceTree = "<group>"; };
+		829618571FB943BD00CBB303 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		8296185C1FB94FD400CBB303 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		829705D920340D4A00AE03CB /* MathLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLibrary.swift; sourceTree = "<group>"; };
+		82A270D71FB9123C004D47F2 /* SceneGraph-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SceneGraph-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A270DC1FB9123C004D47F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82A270DE1FB9123C004D47F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82A270E11FB9123C004D47F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82A270E31FB9123C004D47F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A270E41FB9123C004D47F2 /* SceneGraph.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SceneGraph.entitlements; sourceTree = "<group>"; };
+		82A7EE4F209FD854005CE641 /* Textures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Textures.xcassets; sourceTree = "<group>"; };
+		82B0068120991D8400F58681 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		82B006882099212F00F58681 /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		82BEB44A209D41D6008C2BDC /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		82BEB44C209D4221008C2BDC /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		82DDA8BE2090458D00EB2A9B /* GLTFAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFAsset.swift; sourceTree = "<group>"; };
+		82DDA8C02090458E00EB2A9B /* GLTFTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFTypes.swift; sourceTree = "<group>"; };
+		82DDA8C8209045E900EB2A9B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		82DDA8CB2090485B00EB2A9B /* GLTFMathLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFMathLibrary.swift; sourceTree = "<group>"; };
+		82DDA8D520904EBF00EB2A9B /* CharacterShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CharacterShaders.metal; sourceTree = "<group>"; };
+		82F2C22A204518CD0082FDE6 /* Prop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prop.swift; sourceTree = "<group>"; };
+		82F2C22C204518D40082FDE6 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		82F3733120A45F0A00BF065F /* racing-car.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "racing-car.mtl"; sourceTree = "<group>"; };
+		82F3734320A4658F00BF065F /* racing-car.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "racing-car.obj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82A270D41FB9123C004D47F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8200EF8F20A95CE800235737 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				82F3733120A45F0A00BF065F /* racing-car.mtl */,
+				82F3734320A4658F00BF065F /* racing-car.obj */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		82330E1220AFA5F3001CBFEF /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				82330E0F20AFA5ED001CBFEF /* treefir.mtl */,
+				82330E0E20AFA5ED001CBFEF /* treefir.obj */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		82330E3C20B12646001CBFEF /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				82330E3820B1263E001CBFEF /* DebugBoundingBox.metal */,
+				82330E3920B1263E001CBFEF /* DebugBoundingBox.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		828191F820B2D4A200B74149 /* Racetrack */ = {
+			isa = PBXGroup;
+			children = (
+				828191FF20B2D4A200B74149 /* oilcan.mtl */,
+				8281920020B2D4A200B74149 /* oilcan.obj */,
+			);
+			path = Racetrack;
+			sourceTree = "<group>";
+		};
+		829618641FB964A800CBB303 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82DDA8BC2090432300EB2A9B /* Characters */,
+				82DDA8BD2090433300EB2A9B /* Props */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		829705D820340D3900AE03CB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				82330E3C20B12646001CBFEF /* Debug */,
+				82DDA8C72090459300EB2A9B /* glTF Importer */,
+				829705D920340D4A00AE03CB /* MathLibrary.swift */,
+				82506A1920411D9300D21A0B /* RendererExtension.swift */,
+				82BEB44C209D4221008C2BDC /* InputController.swift */,
+				82330E3620B125D1001CBFEF /* PhysicsController.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		82A270CE1FB9123C004D47F2 = {
+			isa = PBXGroup;
+			children = (
+				82A270D91FB9123C004D47F2 /* SceneGraph */,
+				82A271311FB91925004D47F2 /* SceneGraph-macOS */,
+				82A270D81FB9123C004D47F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82A270D81FB9123C004D47F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82A270D71FB9123C004D47F2 /* SceneGraph-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82A270D91FB9123C004D47F2 /* SceneGraph */ = {
+			isa = PBXGroup;
+			children = (
+				82A270DC1FB9123C004D47F2 /* ViewController.swift */,
+				829618571FB943BD00CBB303 /* Renderer.swift */,
+				826B79D02046DA87008B030C /* Submesh.swift */,
+				82F2C22C204518D40082FDE6 /* Node.swift */,
+				826B79CD2046DA3F008B030C /* Camera.swift */,
+				82DDA8C8209045E900EB2A9B /* Character.swift */,
+				82B0068120991D8400F58681 /* Animation.swift */,
+				82F2C22A204518CD0082FDE6 /* Prop.swift */,
+				82B006882099212F00F58681 /* Renderable.swift */,
+				8278FC5A20651EEA00D81B41 /* Texturable.swift */,
+				828191F520B2D33C00B74149 /* CarScene.swift */,
+				82A7EE4F209FD854005CE641 /* Textures.xcassets */,
+				82DDA8DB2090505500EB2A9B /* Metal Shaders */,
+				829705D820340D3900AE03CB /* Utility */,
+				829618641FB964A800CBB303 /* Models */,
+			);
+			path = SceneGraph;
+			sourceTree = "<group>";
+		};
+		82A271311FB91925004D47F2 /* SceneGraph-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				82BEB44A209D41D6008C2BDC /* GameView.swift */,
+				82506A1520411D5F00D21A0B /* ViewControllerExtension.swift */,
+				82A270E01FB9123C004D47F2 /* Main.storyboard */,
+				82A270DE1FB9123C004D47F2 /* Assets.xcassets */,
+				82A270E31FB9123C004D47F2 /* Info.plist */,
+				82A270E41FB9123C004D47F2 /* SceneGraph.entitlements */,
+				829618551FB91EF100CBB303 /* LocalClasses.swift */,
+			);
+			path = "SceneGraph-macOS";
+			sourceTree = "<group>";
+		};
+		82DDA8BA2090430600EB2A9B /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				8200EF8820A93DD500235737 /* buffer_skeleton.bin */,
+				8200EF8720A93DD500235737 /* skeleton.gltf */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		82DDA8BC2090432300EB2A9B /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				82DDA8BA2090430600EB2A9B /* Skeleton */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		82DDA8BD2090433300EB2A9B /* Props */ = {
+			isa = PBXGroup;
+			children = (
+				828191F720B2D3A900B74149 /* License.md */,
+				8200EF8F20A95CE800235737 /* Car */,
+				82DDA8D020904D0F00EB2A9B /* Ground */,
+				82330E1220AFA5F3001CBFEF /* Tree */,
+				828191F820B2D4A200B74149 /* Racetrack */,
+			);
+			path = Props;
+			sourceTree = "<group>";
+		};
+		82DDA8C72090459300EB2A9B /* glTF Importer */ = {
+			isa = PBXGroup;
+			children = (
+				82DDA8BE2090458D00EB2A9B /* GLTFAsset.swift */,
+				82DDA8C02090458E00EB2A9B /* GLTFTypes.swift */,
+				82DDA8CB2090485B00EB2A9B /* GLTFMathLibrary.swift */,
+			);
+			path = "glTF Importer";
+			sourceTree = "<group>";
+		};
+		82DDA8D020904D0F00EB2A9B /* Ground */ = {
+			isa = PBXGroup;
+			children = (
+				8200EF8B20A9503400235737 /* large-plane.mtl */,
+				8200EF8C20A9503400235737 /* large-plane.obj */,
+			);
+			path = Ground;
+			sourceTree = "<group>";
+		};
+		82DDA8DB2090505500EB2A9B /* Metal Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8296185C1FB94FD400CBB303 /* Shaders.metal */,
+				82DDA8D520904EBF00EB2A9B /* CharacterShaders.metal */,
+				82725C4320340E07007BA98D /* Common.h */,
+			);
+			path = "Metal Shaders";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82A270D61FB9123C004D47F2 /* SceneGraph-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82A270E71FB9123C004D47F2 /* Build configuration list for PBXNativeTarget "SceneGraph-macOS" */;
+			buildPhases = (
+				82A270D31FB9123C004D47F2 /* Sources */,
+				82A270D41FB9123C004D47F2 /* Frameworks */,
+				82A270D51FB9123C004D47F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SceneGraph-macOS";
+			productName = RenderingPipeline;
+			productReference = 82A270D71FB9123C004D47F2 /* SceneGraph-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82A270CF1FB9123C004D47F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Razeware;
+				TargetAttributes = {
+					82A270D61FB9123C004D47F2 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 82A270D21FB9123C004D47F2 /* Build configuration list for PBXProject "SceneGraph" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82A270CE1FB9123C004D47F2;
+			productRefGroup = 82A270D81FB9123C004D47F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82A270D61FB9123C004D47F2 /* SceneGraph-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82A270D51FB9123C004D47F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8200EF8D20A9503400235737 /* large-plane.mtl in Resources */,
+				8200EF8920A93DD600235737 /* skeleton.gltf in Resources */,
+				82F3733320A45F0A00BF065F /* racing-car.mtl in Resources */,
+				8200EF8E20A9503400235737 /* large-plane.obj in Resources */,
+				82A270DF1FB9123C004D47F2 /* Assets.xcassets in Resources */,
+				82330E1020AFA5EE001CBFEF /* treefir.obj in Resources */,
+				82330E1120AFA5EE001CBFEF /* treefir.mtl in Resources */,
+				82A7EE50209FD854005CE641 /* Textures.xcassets in Resources */,
+				8281920B20B2D4A200B74149 /* oilcan.mtl in Resources */,
+				8281920C20B2D4A200B74149 /* oilcan.obj in Resources */,
+				82A270E21FB9123C004D47F2 /* Main.storyboard in Resources */,
+				82F3734420A4658F00BF065F /* racing-car.obj in Resources */,
+				8200EF8A20A93DD600235737 /* buffer_skeleton.bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82A270D31FB9123C004D47F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DDA8D620904EBF00EB2A9B /* CharacterShaders.metal in Sources */,
+				82330E3A20B1263F001CBFEF /* DebugBoundingBox.metal in Sources */,
+				826B79CE2046DA3F008B030C /* Camera.swift in Sources */,
+				82B006862099209B00F58681 /* GLTFAsset.swift in Sources */,
+				82F2C22B204518CD0082FDE6 /* Prop.swift in Sources */,
+				82B006892099212F00F58681 /* Renderable.swift in Sources */,
+				82F2C22D204518D40082FDE6 /* Node.swift in Sources */,
+				82330E3B20B1263F001CBFEF /* DebugBoundingBox.swift in Sources */,
+				82A270DD1FB9123C004D47F2 /* ViewController.swift in Sources */,
+				829618581FB943BD00CBB303 /* Renderer.swift in Sources */,
+				82506A1620411D5F00D21A0B /* ViewControllerExtension.swift in Sources */,
+				82B006872099209B00F58681 /* GLTFTypes.swift in Sources */,
+				82DDA8C9209045E900EB2A9B /* Character.swift in Sources */,
+				829618561FB91EF100CBB303 /* LocalClasses.swift in Sources */,
+				82DDA8CC2090485B00EB2A9B /* GLTFMathLibrary.swift in Sources */,
+				82B0068220991D8400F58681 /* Animation.swift in Sources */,
+				82BEB44D209D4221008C2BDC /* InputController.swift in Sources */,
+				82BEB44B209D41D6008C2BDC /* GameView.swift in Sources */,
+				8278FC5B20651EEA00D81B41 /* Texturable.swift in Sources */,
+				826B79D12046DA87008B030C /* Submesh.swift in Sources */,
+				8296185D1FB94FD400CBB303 /* Shaders.metal in Sources */,
+				82506A1B20411DB100D21A0B /* RendererExtension.swift in Sources */,
+				829705DA20340D4A00AE03CB /* MathLibrary.swift in Sources */,
+				82330E3720B125D1001CBFEF /* PhysicsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82A270E01FB9123C004D47F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82A270E11FB9123C004D47F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82A270E51FB9123C004D47F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneGraph/Metal Shaders/Common.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82A270E61FB9123C004D47F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneGraph/Metal Shaders/Common.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		82A270E81FB9123C004D47F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SceneGraph-macOS/SceneGraph.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SceneGraph-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.SceneGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		82A270E91FB9123C004D47F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SceneGraph-macOS/SceneGraph.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SceneGraph-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.SceneGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82A270D21FB9123C004D47F2 /* Build configuration list for PBXProject "SceneGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A270E51FB9123C004D47F2 /* Debug */,
+				82A270E61FB9123C004D47F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82A270E71FB9123C004D47F2 /* Build configuration list for PBXNativeTarget "SceneGraph-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A270E81FB9123C004D47F2 /* Debug */,
+				82A270E91FB9123C004D47F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82A270CF1FB9123C004D47F2 /* Project object */;
+}
