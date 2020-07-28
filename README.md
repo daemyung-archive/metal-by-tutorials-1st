@@ -12,6 +12,10 @@ You can get more information from [here](https://store.raywenderlich.com/product
 
 You can also download the source code from [here](https://store.raywenderlich.com/products/metal-by-tutorials-source-code).
 
+## Summarize
+
+* [08-character-animation](https://github.com/daemyung/metal_by_tutorials/tree/master/08-character-animation)
+
 ## Copyright
 
 All rights are reserved to Ray Wenderlich.
