@@ -15,6 +15,7 @@ You can also download the source code from [here](https://store.raywenderlich.co
 ## Summarize
 
 * [08-character-animation](https://github.com/daemyung/metal_by_tutorials/tree/master/08-character-animation)
+* [12-environment](https://github.com/daemyung/metal_by_tutorials/tree/master/12-environment)
 * [14-multipass-rendering](https://github.com/daemyung/metal_by_tutorials/tree/master/14-multipass-rendering)
 
 ## Copyright
