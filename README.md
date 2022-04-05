@@ -1,6 +1,6 @@
 # Metal by Tutorials
 
-The source code is for **FIRST EDITION**. It's not **SECOND EDITION**. The code is different from **SECOND EDITION**.
+The source code is for **FIRST EDITION**. It's not **SECOND EDITION**. The code is different from **SECOND EDITION**. You can clone **SECOND EDITION** at [here](https://github.com/daemyung/metal-by-tutorials).
 
 ## Book
 
